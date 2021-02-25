@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Bankers App</string>
+    <string name="customersList_screen_name">Customers</string>
+    <string name="customerDetails_screen_name">Customer Details</string>
+    <string name="transfer_screen_name">Transfer Money</string>
+    <string name="receiver_screen_name">Select Receiver</string>
+    <string name="history_screen_name">Past Transactions</string>
+</resources>

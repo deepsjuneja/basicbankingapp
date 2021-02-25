@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basicbankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_bank"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_bank"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Basicbankingapp">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CustomerListActivity"
+            android:theme="@style/Theme.OtherScreens"
+            android:label="@string/customersList_screen_name">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CustomerDetailsActivity"
+            android:theme="@style/Theme.OtherScreens"
+            android:label="@string/customerDetails_screen_name">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TransferActivity"
+            android:theme="@style/Theme.OtherScreens"
+            android:label="@string/transfer_screen_name">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ReceiverListActivity"
+            android:theme="@style/Theme.OtherScreens"
+            android:label="@string/receiver_screen_name">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TransactionHistoryActivity"
+            android:theme="@style/Theme.OtherScreens"
+            android:label="@string/history_screen_name">
+            <intent-filter>
+                <action android:name="android.intent.action.OTHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

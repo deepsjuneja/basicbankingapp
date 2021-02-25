@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/splash_background"
+    android:backgroundTint="#AEFFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/customer_button"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerInside"
+        android:id="@+id/viewCustomerButton"
+        android:background="@drawable/border_customer_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Customers"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textColor="#512901"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+</LinearLayout>

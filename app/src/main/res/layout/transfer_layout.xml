@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loadingCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="true"
+            android:id="@+id/progressBar"/>
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/animation2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/afterAnimation">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Successful!!!"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#512901"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:background="#8AFDC723"
+            android:padding="8dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/buttonsAfterAnimation"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="home"
+                android:backgroundTint="@color/brown_2"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="6dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:id="@+id/homeButton"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="transaction history"
+                android:backgroundTint="@color/brown_2"
+                android:padding="6dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/historyButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
